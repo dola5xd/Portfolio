@@ -1,0 +1,561 @@
+                    @font-face {
+                        font-family: Raleway;
+                        src: url(res/Raleway-VariableFont_wght.ttf);
+                    }
+                    
+                    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+                     ::-webkit-scrollbar {
+                        background-color: #00405f;
+                        width: 15px;
+                    }
+                    
+                     ::-webkit-scrollbar-thumb {
+                        background-color: #e9eef1;
+                        border-radius: 5px;
+                    }
+                    
+                    * {
+                        padding: 0;
+                        margin: 0;
+                        box-sizing: border-box;
+                        font-family: Raleway;
+                        scroll-behavior: smooth;
+                    }
+                    
+                    html {
+                        background-color: #00405f;
+                        width: 100%;
+                        overflow-x: hidden;
+                        scroll-behavior: smooth;
+                    }
+                    
+                    nav {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 10px 20px;
+                        background-color: #00405f;
+                    }
+                    
+                    nav .logo a img {
+                        width: 85px;
+                    }
+                    
+                    nav .links a {
+                        text-decoration: none;
+                        font-size: 1em;
+                        color: #4cd2ff;
+                        margin-right: 20px;
+                        font-weight: 700;
+                        transition: 0.4s;
+                    }
+                    
+                    nav .links button {
+                        padding: 10px;
+                        border-radius: 28px;
+                        border: 0;
+                        background-color: #ba47ff;
+                    }
+                    
+                    nav .links button a {
+                        color: #fff;
+                        margin: 0;
+                    }
+                    
+                    nav .links a:hover {
+                        color: #ba47ff;
+                    }
+                    
+                    nav .links button a:hover {
+                        color: #00405f;
+                    }
+                    
+                    .about {
+                        width: 100%;
+                        margin-top: 50px;
+                        position: relative;
+                    }
+                    
+                    .about .text {
+                        position: absolute;
+                        top: 50%;
+                        left: 10%;
+                        animation: light 3s alternate infinite;
+                    }
+                    
+                    .about .text h1 {
+                        font-size: 2em;
+                        color: #47e1ae;
+                        cursor: default;
+                        transition: 0.5s;
+                    }
+                    
+                    .about .text .pabout {
+                        font-size: 1.2em;
+                        color: #47e1ae;
+                        cursor: default;
+                        margin: 5px 0;
+                        transition: 0.4s;
+                    }
+                    
+                    .about .text p:hover {
+                        color: #ba47ff;
+                    }
+                    
+                    .about .text h1:hover {
+                        color: #ba47ff;
+                    }
+                    
+                    .about .text a i {
+                        color: #47e1ae;
+                        font-size: 1.7em;
+                        margin: 10px 5px;
+                        transition: 0.4s;
+                    }
+                    
+                    .about .text a i:hover {
+                        color: #ba47ff;
+                    }
+                    
+                    .about .text {
+                        position: static;
+                        text-align: center;
+                        margin-bottom: 100px;
+                    }
+                    
+                    .about .img {
+                        position: static;
+                        display: flex;
+                        justify-content: center;
+                    }
+                    
+                    .srv {
+                        width: 100%;
+                        position: relative;
+                        padding: 10% 0 0;
+                    }
+                    
+                    .srv .text {
+                        text-align: center;
+                        margin-top: 50px;
+                        cursor: default;
+                    }
+                    
+                    .srv .text h1,
+                    .srv .text p {
+                        color: #ffffff;
+                        margin-bottom: 10px;
+                        opacity: .7;
+                        transition: 0.5s;
+                        animation: light 2s alternate infinite;
+                    }
+                    
+                    .srv .text h1:hover,
+                    .srv .text p:hover {
+                        opacity: 1;
+                    }
+                    
+                    .srv .img {
+                        position: relative;
+                    }
+                    
+                    .srv .img .img1 {
+                        width: 100%;
+                    }
+                    
+                    .cards {
+                        position: absolute;
+                        width: 100%;
+                        top: 30%;
+                    }
+                    /* Float four columns side by side */
+                    
+                    .column {
+                        display: inline-table;
+                        width: 25%;
+                        padding: 0 10px;
+                        height: 10%;
+                    }
+                    /* Remove extra left and right margins, due to padding */
+                    
+                    .row {
+                        display: flex;
+                        justify-content: center;
+                    }
+                    /* Clear floats after the columns */
+                    
+                    .row:after {
+                        content: "";
+                        display: table;
+                        clear: both;
+                    }
+                    /* Responsive columns */
+                    
+                    @media screen and (max-width: 600px) {
+                        .column {
+                            width: 100%;
+                            display: block;
+                            margin-bottom: 20px;
+                        }
+                    }
+                    /* Style the counter cards */
+                    
+                    .card {
+                        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                        padding: 10px;
+                        text-align: center;
+                        background-color: #c5e6f1e3;
+                        border-radius: 25px;
+                        width: 100%;
+                    }
+                    
+                    .card h3 {
+                        color: #00405f;
+                    }
+                    
+                    .card p {
+                        color: #00405f;
+                    }
+                    
+                    .card img {
+                        max-width: 100%;
+                        display: flex;
+                        margin: auto;
+                    }
+                    
+                    .contact {
+                        position: relative;
+                        margin: 0;
+                    }
+                    
+                    .contact h1 {
+                        margin-top: 20px;
+                        text-align: center;
+                        color: #ffffff;
+                        cursor: default;
+                        font-size: 2em;
+                        transition: 0.5s;
+                        animation: color 3s alternate infinite;
+                    }
+                    
+                    .contact .img {
+                        display: flex;
+                        width: 100%;
+                    }
+                    
+                    .contact .img img {
+                        width: 100%;
+                        height: 108vh;
+                        position: static;
+                        z-index: -1;
+                        margin: -40px auto;
+                    }
+                    
+                    .contact .cont {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                    
+                    .contact .cont form {
+                        position: absolute;
+                        top: 40%;
+                        right: 40vh;
+                        margin: auto;
+                    }
+                    
+                    .contact .cont form h2 {
+                        text-align: center;
+                        color: #40b4db;
+                        font-weight: 900;
+                    }
+                    
+                    label {
+                        font-weight: 800;
+                        font-size: 1.2em;
+                    }
+                    
+                    input[type=text],
+                    input[type=email],
+                    textarea {
+                        width: 100%;
+                        border: 1px solid #00405f;
+                        padding: 10px;
+                        margin: 9px 0;
+                        border-radius: 5px;
+                        resize: none;
+                        font-weight: 800;
+                    }
+                    
+                    input[type=text]:focus,
+                    input[type=email]:focus,
+                    textarea:focus {
+                        background-color: rgba(255, 255, 255, 0.678);
+                        outline: none;
+                    }
+                    
+                    .contact .cont form button {
+                        display: flex;
+                        margin-right: 100px;
+                        background-color: #47e1ae;
+                        color: #101010ab;
+                        font-weight: 900;
+                        padding: 12px 20px;
+                        border: none;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        border: 1px solid #101010ab;
+                        transition: 0.6s;
+                    }
+                    
+                    .contact .cont form button:hover {
+                        background-color: #4cd2ff;
+                        color: #101010;
+                        font-weight: 900;
+                        border: 1px solid #101010;
+                    }
+                    
+                    footer {
+                        min-height: 300px;
+                        background-color: #101010a6;
+                        display: flex;
+                        border-radius: 25px 25px 0 0;
+                    }
+                    
+                    footer .txt {
+                        padding: 100px 200px;
+                        border-right: 2px solid #1010105f;
+                        display: flex;
+                    }
+                    
+                    footer .text {
+                        margin-left: 20px;
+                    }
+                    
+                    footer .text h2 {
+                        color: #47e1ae;
+                    }
+                    
+                    footer .text h1 {
+                        margin-top: 5px;
+                        font-weight: 900;
+                        color: #47e1ae;
+                        font-size: 1em;
+                    }
+                    
+                    footer .text a {
+                        color: #47e1ae;
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 1em;
+                    }
+                    
+                    footer .li {
+                        padding: 100px 0;
+                        margin: auto;
+                    }
+                    
+                    footer li {
+                        list-style: none;
+                    }
+                    
+                    footer .li h1 {
+                        margin-bottom: 10px;
+                        color: #47e1ae;
+                        cursor: default;
+                        animation: light 2s alternate infinite;
+                    }
+                    
+                    footer li a i {
+                        margin-right: 10px;
+                        font-size: 2em;
+                        color: #47e1ae;
+                        animation: light 2s alternate infinite;
+                        transition: 0.5s;
+                    }
+                    
+                    footer li a i:hover {
+                        color: #4cd2ff;
+                    }
+                    /*mobile*/
+                    
+                    @media (min-width:0px) and (max-width:767px) {
+                        html {
+                            overflow-x: hidden;
+                        }
+                        nav {
+                            display: block;
+                            padding: 0;
+                        }
+                        nav .logo a img {
+                            display: flex;
+                            margin: 10px auto;
+                        }
+                        nav .links {
+                            display: flex;
+                            flex-wrap: wrap;
+                            margin: 10px 0px;
+                            justify-content: space-evenly;
+                        }
+                        nav .links button {
+                            display: flex;
+                            margin: 10px auto;
+                        }
+                        .about {
+                            display: inline-block;
+                            padding: 200px 20px;
+                        }
+                        .about .text {
+                            position: static;
+                            text-align: center;
+                        }
+                        .about .text .pabout {
+                            text-align: center;
+                            margin-left: 25px;
+                        }
+                        .about .img {
+                            display: none;
+                        }
+                        .srv {
+                            padding: 0;
+                        }
+                        .srv .img {
+                            display: flex;
+                            justify-content: center
+                        }
+                        .card img {
+                            max-width: 100%;
+                            display: flex;
+                            margin: auto;
+                        }
+                        .srv .img .img1 {
+                            display: none;
+                        }
+                        .srv .text p {
+                            margin-bottom: 20px;
+                        }
+                        .cards {
+                            position: static;
+                            width: 80%;
+                        }
+                        .column {
+                            width: 100%;
+                            display: block;
+                            margin-bottom: 20px;
+                        }
+                        .row {
+                            margin: 0 -5px;
+                            display: block;
+                        }
+                        .contact {
+                            display: block;
+                        }
+                        .contact .img img {
+                            display: none;
+                        }
+                        .contact .cont {
+                            width: 100%;
+                        }
+                        .contact .cont form {
+                            position: static;
+                            padding: 20px;
+                        }
+                        input[type=text],
+                        input[type=email],
+                        textarea {
+                            padding: 14px;
+                        }
+                        label {
+                            color: #47e1ae;
+                        }
+                        footer {
+                            max-height: 100px;
+                        }
+                        footer .txt {
+                            padding: 100px 0;
+                            max-width: 50%;
+                            display: block;
+                            text-align: center;
+                        }
+                    }
+                    /*small-screen*/
+                    
+                    @media (min-width:768px) and (max-width:1023px) {
+                        .about .text {
+                            position: static;
+                            text-align: center;
+                            margin-bottom: 100px;
+                        }
+                        .about .img {
+                            position: static;
+                            display: flex;
+                            justify-content: center;
+                        }
+                        .card h3 {
+                            font-size: 1em;
+                        }
+                        .contact .cont form {
+                            position: absolute;
+                            top: 40%;
+                            right: 9%;
+                            margin: auto;
+                        }
+                        input[type=text],
+                        input[type=email],
+                        textarea {
+                            width: 91%;
+                        }
+                        footer .txt {
+                            padding: 100px 50px;
+                        }
+                    }
+                    /*medium screen*/
+                    
+                    @media (min-width:1024px) and (max-width:1440px) {
+                        .about .text {
+                            position: static;
+                            text-align: center;
+                            margin-bottom: 100px;
+                        }
+                        .about .img {
+                            position: static;
+                            display: flex;
+                            justify-content: center;
+                        }
+                        .contact .cont form {
+                            position: absolute;
+                            top: 40%;
+                            right: 26%;
+                            margin: auto;
+                        }
+                        footer .txt {
+                            padding: 100px;
+                        }
+                    }
+                    
+                    @keyframes light {
+                        0% {
+                            opacity: 0;
+                        }
+                        100% {
+                            opacity: 1;
+                        }
+                    }
+                    
+                    @keyframes color {
+                        0% {
+                            color: #fff;
+                        }
+                        50% {
+                            color: #47e1ae;
+                        }
+                        100% {
+                            color: #4cd2ff;
+                        }
+                    }
+                    
+                    @media (min-width:409px) and (max-width:767px) {
+                        nav .links button {
+                            display: static;
+                            margin: 0;
+                        }
+                    }
